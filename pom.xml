@@ -7,6 +7,25 @@
 		<version>1.4.1.RELEASE</version>
 	</parent>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<!--cloud同一版本管理-->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Camden.SR1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
   <groupId>cn.lovevv</groupId>
   <artifactId>spring_learn</artifactId>
 	<packaging>pom</packaging>
@@ -14,11 +33,11 @@
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-		<dependency>
+<!--		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>4.3.12.RELEASE</version>
-		</dependency>
+		</dependency>-->
 		
 		<dependency>
 			<groupId>junit</groupId>
@@ -26,6 +45,12 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
 	</dependencies>
   
   
