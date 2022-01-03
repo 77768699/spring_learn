@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>springboot</groupId>
-    <artifactId>springboot</artifactId>
+    <groupId>spring-boot</groupId>
+    <artifactId>spring-boot</artifactId>
 
 
     <dependencies>
